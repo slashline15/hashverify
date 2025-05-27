@@ -1,9 +1,7 @@
 # 🔐 HashVerify - Verificador de Segurança de Arquivos
 
 
-Uma aplicação em Python com interface gráfica (Tkinter) para calcular hashes de arquivos e verificar possíveis ameaças usando a API do [VirusTotal](https://www.virustotal.com/). Ideal para validar arquivos `.exe`, `.dll`, `.bat`, `.ps1`, entre outros, com facilidade e exportar relatórios profissionais em CSV e JSON.
-
-![Captura de tela](./screenshot.png) 
+Uma aplicação em Python com interface gráfica (Tkinter) para calcular hashes de arquivos e verificar possíveis ameaças usando a API do [VirusTotal](https://www.virustotal.com/). Ideal para validar arquivos `.exe`, `.dll`, `.bat`, `.ps1`, entre outros, com facilidade e exportar relatórios profissionais em CSV e JSON. Ou simplesmente, verificar os calcular os hashs de arquivos uma pasta e receber a lista de links para a verificação manual.
 
 ---
 
@@ -50,6 +48,15 @@ cd hashverify
 ```bash
 python hashverify.py
 ```
+
+Ou se quiser algo mais prático, só baixe o `verifica_hash.py` e execute e execute com um `.cmd` simples:
+
+```bash
+@echo off
+python "C:\local\do\arquivo\verifica_hash.py" %1
+pause
+```
+
 
 3. Se quiser usar o VirusTotal:
 
@@ -101,5 +108,3 @@ Desenvolvido por [@slashline15](https://github.com/slashline15) — engenheiro c
 ## 📄 Licença
 
 MIT. Faça bom uso e contribua se quiser. Não me culpe se você subir um trojan por engano 😅.
-
-```
